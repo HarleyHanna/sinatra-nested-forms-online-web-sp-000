@@ -9,7 +9,7 @@ module FormsLab
       erb :root
     end 
     
-    get '/new'
+    get '/new' do
       erb :new
     end
     
@@ -23,8 +23,5 @@ module FormsLab
       @ships = Ship.all
       erb :show
     end
-    
-    
-
   end
 end
